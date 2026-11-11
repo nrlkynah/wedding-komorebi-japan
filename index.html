@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4a1520">
+  <meta name="description" content="Tanaka and Futaba invite you to celebrate their wedding on 20 February 2027. Sakura no Chigiri, a timeless Japanese wedding invitation.">
+  <title>Tanaka &amp; Futaba · 20 February 2027</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Marcellus&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Zen+Old+Mincho:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#rsvp">Skip to RSVP</a>
+
+  <!-- Lacquer and gold waves behind everything -->
+  <div class="lacquer" aria-hidden="true"></div>
+  <canvas id="fireflies" aria-hidden="true"></canvas>
+
+  <!-- 1. Opening: a lacquered gatefold, tied with mizuhiki, opens on the invitation card -->
+  <section id="cover" class="cover" aria-label="Opening" data-fireflies="0.6">
+    <div class="invite">
+      <img class="branch branch-top" src="assets/images/sakura-branch.webp" alt="" width="1676" height="870" aria-hidden="true">
+      <img class="branch branch-foot" src="assets/images/sakura-cluster.webp" alt="" width="1244" height="1259" aria-hidden="true">
+
+      <div class="sheet cover-sheet">
+        <i class="corner tl" aria-hidden="true"></i><i class="corner tr" aria-hidden="true"></i><i class="corner bl" aria-hidden="true"></i><i class="corner br" aria-hidden="true"></i>
+        <div class="cover-text">
+          <img class="kamon" src="assets/images/kamon.svg" alt="" width="120" height="120">
+          <p class="kanji" lang="ja">桜の契り</p>
+          <p class="eyebrow">The Wedding of</p>
+          <h1 class="names">
+            <span data-c="name1">Tanaka</span>
+            <span class="amp">&amp;</span>
+            <span data-c="name2">Futaba</span>
+          </h1>
+          <img class="divider" src="assets/images/divider.svg" alt="" width="260" height="24">
+          <p class="cover-date" data-c="dateLong">20 February 2027</p>
+          <figure class="window" aria-hidden="true"><img src="assets/images/garden.webp" alt="" width="1680" height="944"></figure>
+          <button id="enter" type="button" class="seal-btn">Open the Invitation</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="gates" aria-hidden="true">
+      <div class="gate gate-l"></div>
+      <div class="gate gate-r"></div>
+      <img class="knot" src="assets/images/mizuhiki.webp" alt="" width="1057" height="1092">
+    </div>
+  </section>
+
+  <header class="site-head" id="site-head">
+    <a class="mark" href="#invitation" aria-label="Back to the invitation"><span data-c="initialA">T</span>&amp;<span data-c="initialB">F</span></a>
+    <button id="menu-btn" class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span class="menu-word">Menu</span></button>
+    <nav id="menu" class="menu" aria-label="Sections">
+      <a href="#details">The Day</a>
+      <a href="#story">Our Story</a>
+      <a href="#moments">Memories</a>
+      <a href="#location">The Venue</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- 2. Invitation: a formal letter on washi, with a vertical kanji title -->
+    <section id="invitation" class="sheet page letter" data-fireflies="0.4">
+      <i class="corner tl" aria-hidden="true"></i><i class="corner tr" aria-hidden="true"></i><i class="corner bl" aria-hidden="true"></i><i class="corner br" aria-hidden="true"></i>
+      <img class="page-flowers" src="assets/images/sakura-cluster.webp" alt="" width="1244" height="1259" aria-hidden="true">
+      <p class="tategaki" lang="ja" aria-hidden="true">御招待</p>
+      <img class="kamon small reveal" src="assets/images/kamon.svg" alt="" width="120" height="120">
+      <p class="eyebrow reveal">With Joy &amp; Gratitude</p>
+      <h2 id="invitation-title" class="lede reveal" tabindex="-1">Two hearts that met beneath the spring blossoms have found their way home to one another.</h2>
+      <img class="divider reveal" src="assets/images/divider.svg" alt="" width="260" height="24">
+      <p class="script-names reveal" data-c="couple">Tanaka &amp; Futaba</p>
+      <p class="letter-body reveal">request the honour of your presence<br>as they begin their forever together</p>
+      <p class="eyebrow reveal" data-c="dateLong">20 February 2027</p>
+    </section>
+
+    <!-- 3. The day: a lacquer band with the date as a gold seal, and the countdown -->
+    <section id="details" class="day-band" aria-labelledby="details-title" data-fireflies="0.3">
+      <div class="sheet page day-sheet">
+        <i class="corner tl" aria-hidden="true"></i><i class="corner tr" aria-hidden="true"></i><i class="corner bl" aria-hidden="true"></i><i class="corner br" aria-hidden="true"></i>
+        <p class="eyebrow reveal">Save the Date</p>
+        <h2 id="details-title" class="page-title reveal">The Day</h2>
+        <div class="date-seal reveal">
+          <span class="seal-month" data-c="month">February</span>
+          <span class="seal-day" data-c="day" data-depth="0.02">20</span>
+          <span class="seal-year" data-c="year">2027</span>
+        </div>
+        <div class="schedule reveal">
+          <div class="slot"><h3 class="eyebrow">Ceremony</h3><p class="slot-time" data-c="ceremonyTime">5:00 PM</p><p class="slot-note">Exchange of vows</p></div>
+          <div class="slot"><h3 class="eyebrow">Reception</h3><p class="slot-time" data-c="receptionTime">7:30 PM</p><p class="slot-note">Dinner &amp; celebration</p></div>
+        </div>
+        <p class="venue-line reveal" data-c="venue">Sakura Garden Pavilion</p>
+        <p class="demo-note" data-demo>Demo invitation: times and venue are placeholders.</p>
+      </div>
+      <div class="countdown reveal" id="countdown">
+        <p class="eyebrow light">Until we meet beneath the sakura</p>
+        <dl class="units" id="units">
+          <div><dd id="cd-days">--</dd><dt>Days</dt></div>
+          <div><dd id="cd-hours">--</dd><dt>Hours</dt></div>
+          <div><dd id="cd-minutes">--</dd><dt>Minutes</dt></div>
+          <div><dd id="cd-seconds">--</dd><dt>Seconds</dt></div>
+        </dl>
+        <p class="cd-done" id="cd-done" hidden>The day has come. Thank you for walking with us.</p>
+      </div>
+    </section>
+
+    <!-- 4. Our story: a framed painting, then three chapters on a gold thread -->
+    <section id="story" class="sheet page story" aria-labelledby="story-title" data-fireflies="0.4">
+      <i class="corner tl" aria-hidden="true"></i><i class="corner tr" aria-hidden="true"></i><i class="corner bl" aria-hidden="true"></i><i class="corner br" aria-hidden="true"></i>
+      <p class="eyebrow reveal">Our Story</p>
+      <h2 id="story-title" class="page-title reveal">A Love Written<br>Beneath the Sakura</h2>
+      <figure class="painting reveal"><img src="assets/images/garden.webp" width="1680" height="944" loading="lazy" alt="A painted Japanese garden with a vermilion bridge over a pond, a pavilion and cherry trees under gold clouds."></figure>
+      <ol class="chapters">
+        <li class="chapter reveal">
+          <span class="chapter-num" lang="ja" aria-hidden="true" data-depth="0.02">一</span>
+          <div><p class="eyebrow">Chapter I</p><h3>The Day We Met</h3><p>A spring morning, a borrowed umbrella beneath the blossoms, and a conversation neither of them wanted to end.</p></div>
+        </li>
+        <li class="chapter reveal">
+          <span class="chapter-num" lang="ja" aria-hidden="true" data-depth="0.02">二</span>
+          <div><p class="eyebrow">Chapter II</p><h3>When Love Bloomed</h3><p>Long afternoons turned into long letters. Somewhere between the seasons, every plan began to include the other.</p></div>
+        </li>
+        <li class="chapter reveal">
+          <span class="chapter-num" lang="ja" aria-hidden="true" data-depth="0.02">三</span>
+          <div><p class="eyebrow">Chapter III</p><h3>Our Forever</h3><p>Beneath a lantern-lit garden, a quiet question and an easy answer. The rest of the story begins here.</p></div>
+        </li>
+      </ol>
+      <p class="demo-note" data-demo>Demo story: fictional text.</p>
+    </section>
+
+    <!-- 5. Memories: photographs mounted in gold, on lacquer -->
+    <section id="moments" class="gallery-band" aria-labelledby="moments-title" data-fireflies="0.3">
+      <p class="eyebrow light reveal">Cherished Moments</p>
+      <h2 id="moments-title" class="page-title light reveal">Memories</h2>
+      <ul class="gallery" id="gallery">
+        <li class="reveal"><button type="button" aria-label="Open photo 1"><img src="assets/images/photo-slot-portrait.svg" width="800" height="1000" loading="lazy" alt="Photo placeholder 1"></button></li>
+        <li class="reveal"><button type="button" aria-label="Open photo 2"><img src="assets/images/photo-slot-landscape.svg" width="1200" height="800" loading="lazy" alt="Photo placeholder 2"></button></li>
+        <li class="reveal"><button type="button" aria-label="Open photo 3"><img src="assets/images/photo-slot-square.svg" width="1000" height="1000" loading="lazy" alt="Photo placeholder 3"></button></li>
+        <li class="reveal"><button type="button" aria-label="Open photo 4"><img src="assets/images/photo-slot-portrait.svg" width="800" height="1000" loading="lazy" alt="Photo placeholder 4"></button></li>
+        <li class="reveal"><button type="button" aria-label="Open photo 5"><img src="assets/images/photo-slot-landscape.svg" width="1200" height="800" loading="lazy" alt="Photo placeholder 5"></button></li>
+        <li class="reveal"><button type="button" aria-label="Open photo 6"><img src="assets/images/photo-slot-square.svg" width="1000" height="1000" loading="lazy" alt="Photo placeholder 6"></button></li>
+      </ul>
+      <p class="demo-note light" data-demo>Photo slots: replace these with the couple's own photographs.</p>
+    </section>
+
+    <!-- 6. The venue: a place card -->
+    <section id="location" class="sheet page venue" aria-labelledby="location-title" data-fireflies="0.3">
+      <i class="corner tl" aria-hidden="true"></i><i class="corner tr" aria-hidden="true"></i><i class="corner bl" aria-hidden="true"></i><i class="corner br" aria-hidden="true"></i>
+      <img class="page-branch" src="assets/images/sakura-branch.webp" alt="" width="1676" height="870" aria-hidden="true">
+      <p class="eyebrow reveal">The Venue</p>
+      <h2 id="location-title" class="page-title reveal" data-c="venue">Sakura Garden Pavilion</h2>
+      <img class="divider reveal" src="assets/images/divider.svg" alt="" width="260" height="24">
+      <p class="venue-when reveal"><span data-c="dateLong">20 February 2027</span><br>from <span data-c="ceremonyTime">5:00 PM</span></p>
+      <p class="reveal"><a id="maps-link" class="seal-btn inline" href="https://www.google.com/maps" target="_blank" rel="noopener">View on Google Maps</a></p>
+      <p class="demo-note" data-demo>Demo link: the real venue location will be added here.</p>
+    </section>
+
+    <!-- 7. RSVP: a reply card -->
+    <section id="rsvp" class="sheet page reply" aria-labelledby="rsvp-title" data-fireflies="0.3">
+      <i class="corner tl" aria-hidden="true"></i><i class="corner tr" aria-hidden="true"></i><i class="corner bl" aria-hidden="true"></i><i class="corner br" aria-hidden="true"></i>
+      <img class="kamon small reveal" src="assets/images/kamon.svg" alt="" width="120" height="120">
+      <p class="eyebrow reveal">Kindly Reply</p>
+      <h2 id="rsvp-title" class="page-title reveal">Will You Join Us?</h2>
+
+      <form id="rsvp-form" class="form reveal" novalidate>
+        <div class="field">
+          <label for="guest-name">Name</label>
+          <input id="guest-name" name="name" type="text" autocomplete="name" maxlength="80" aria-describedby="err-name">
+          <p class="error" id="err-name"></p>
+        </div>
+
+        <fieldset class="field" id="attendance" aria-describedby="err-attendance">
+          <legend>Attendance</legend>
+          <label class="choice"><input type="radio" name="attendance" value="yes"><span>Joyfully accepts</span></label>
+          <label class="choice"><input type="radio" name="attendance" value="no"><span>Regretfully declines</span></label>
+          <p class="error" id="err-attendance"></p>
+        </fieldset>
+
+        <div class="field" id="guests-field">
+          <label for="guests">Number of guests <small>(optional)</small></label>
+          <input id="guests" name="guests" type="number" inputmode="numeric" min="1" max="10" aria-describedby="err-guests">
+          <p class="error" id="err-guests"></p>
+        </div>
+
+        <p><button type="submit" class="seal-btn solid">Send RSVP</button></p>
+        <p class="demo-note">This is a demo form. Replies are not sent or saved yet.</p>
+      </form>
+
+      <div id="rsvp-done" class="done" tabindex="-1" hidden>
+        <img class="knot-small" src="assets/images/mizuhiki.webp" alt="" width="1057" height="1092">
+        <p class="done-name" id="done-label">Thank you</p>
+        <p class="done-line" id="done-line"></p>
+        <p class="demo-note"><strong>Demo only:</strong> this reply was not sent or saved anywhere.</p>
+        <button type="button" id="rsvp-again" class="link">Fill in the form again</button>
+      </div>
+    </section>
+
+    <!-- 8. Closing: the garden at golden hour, framed -->
+    <section id="closing" class="closing" aria-label="Closing" data-fireflies="0.8">
+      <div class="closing-art" aria-hidden="true"><img src="assets/images/garden.webp" alt="" width="1680" height="944" loading="lazy"></div>
+      <div class="closing-text">
+        <img class="knot-small reveal" src="assets/images/mizuhiki.webp" alt="" width="1057" height="1092">
+        <p class="closing-line reveal">And so,<br>our forever begins</p>
+        <p class="closing-names reveal" data-c="couple">Tanaka &amp; Futaba</p>
+        <p class="eyebrow light reveal" data-c="dateDots">20 · 02 · 2027</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Photo viewer">
+    <img id="lb-img" alt="">
+    <p class="lb-count" id="lb-count" aria-live="polite"></p>
+    <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close photo viewer">&times;</button>
+    <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo">&#8592;</button>
+    <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Next photo">&#8594;</button>
+  </dialog>
+</body>
+</html>
